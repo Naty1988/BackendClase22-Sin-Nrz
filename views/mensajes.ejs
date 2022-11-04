@@ -1,0 +1,10 @@
+<h1> mensajes desde plantilla "mensajes"</h1>
+
+<% mensajes.forEach(mj=> { %>
+
+       <div>
+        <span style="color: blue; font-weight: bold"><%= mj.id %></span>
+        <span style="color: red">[<%= mj.author.nombre %>]: </span>
+        <span style="color: green"><%= mj.text %></span>
+    </div>
+    <% }) %>
